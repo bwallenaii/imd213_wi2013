@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Object Example</title>
+	<script type="text/javascript">
+		var cat = {
+			color: "black",
+			breed: "siamese",
+			furLength: "short",
+			eyeColor: "blue",
+
+			speak: function()
+			{
+				alert("meow");
+			},
+			eat: function()
+			{
+				alert("munch, munch.");
+				this.speak();
+			},
+			excrete: function()
+			{
+				alert(" . . . you're job to clean that up.");
+			},
+			pet: function(){
+				alert("You pet the cat's " + this.color + " fur.");
+			}
+		};
+		
+		cat.pet();
+		cat.speak();
+		cat.eat();
+		cat.excrete();
+
+		cat.speak = function(){
+			alert("bark");
+		};
+
+		cat.color = "green";
+
+		cat.eat();
+		cat.pet();
+		
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

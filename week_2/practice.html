@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>Practice Example Code</title>
+	<script type="text/javascript">
+		var x = Number(prompt("X is"));
+		var y = Number(prompt("Y is"));
+		var animal = prompt("What is your favorite animal?");
+		var bigNum = multiplier(3,4);
+		console.log(bigNum);
+
+		function multiplier(n1, n2)
+		{
+			var ret = n1 * n2;
+			return ret;
+		}
+
+		function devider(n1, n2)
+		{
+			var ret = n1 / n2;
+			return ret;
+		}
+
+
+
+		animal = animal.toLowerCase();
+
+		while(isNaN(x))
+		{
+			x = Number(prompt("X is not a number. X should be..."));
+		}
+
+		while(isNaN(y))
+		{
+			y = Number(prompt("Y is not a number. Y should be..."));
+		}
+
+		//if and else-if examples
+		if(x < y)
+		{
+			alert(x + " is smaller than " + y);
+		}
+		else if (x > y)
+		{
+			alert(x + " is larger than " + y);
+		}
+		else
+		{
+			alert(x + " is equal to " + y);
+		}
+
+		//Switch example
+
+		switch(animal)
+		{
+			case "dog":
+				alert("Woof!");
+			break;
+			case "wolf":
+				alert("Awooooooo");
+			break;
+			case "platypus":
+				alert(". . .");
+			break;
+			default:
+				alert("I don't know what a " + animal + " is.");
+			break;
+		}
+
+		alert("This will always run.");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

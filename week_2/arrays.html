@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Array Example</title>
+	<script type="text/javascript">
+		var names = [];
+		var curName = "";
+
+		while(curName = prompt("Please provide a name"))
+		{
+			names.push(curName);
+		}
+		//console.log(names);
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		for(var i = 0; i < names.length;i++)
+		{
+			document.write(names[i] + "<br />\r\n");
+		}
+		//the following does the same while emptying the array
+		/*while(names.length > 0)
+		{
+			document.write(names.shift() + "<br />\r\n");
+		}*/
+	</script>
+</body>
+</html>
