@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>Form Validation</title>
+	<link rel="stylesheet" href="js/formcheck/theme/classic/formcheck.css" />
+	<style>
+		label, textarea{
+			display: block;
+			margin-bottom: 40px;
+		}
+	</style>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
+	<script src="js/moomore.js"></script>
+	<script src="js/formcheck/lang/en.js"></script>
+	<script src="js/formcheck/formcheck.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<form id="contact-form" action="process.php" method="post" enctype="mulipart/form-data">
+		<label>
+			Name: <input class="validate['required','length[2,45]']" type="text" name="name" />
+		</label>
+		<label>
+			Email: <input class="validate['required','email']" type="text" name="email" />
+		</label>
+		Times Available:
+		<label>
+			<input type="checkbox" name="times[]" value="morning" /> Morning
+		</label>
+		<label>
+			<input type="checkbox" name="times[]" value="afternoon" /> Afternoon
+		</label>
+		<label>
+			<input type="checkbox" name="times[]" value="night" /> Night
+		</label>
+		<label>
+			Comments:
+			<textarea name="comments"></textarea>
+		</label>
+		<input type="submit" />
+	</form>
+</body>
+</html>
