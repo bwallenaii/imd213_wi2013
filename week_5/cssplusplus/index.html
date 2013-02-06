@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>CSS Examples</title>
+	<style>
+		nav a{
+			color: #aa7745;
+		}
+
+		nav a[href='about.html']{
+			color: #ff0000;
+		}
+
+		nav a[href='about.html']:hover{
+			color: #ffff00;
+			text-decoration: none;
+		}
+
+		nav a:first-child{
+			color: #0000ff;
+		}
+
+		nav a:last-child{
+			color: #777777;
+		}
+
+		a[href^='http']{
+			color: #222222;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="home.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="asdf.html">FAQ</a>
+		<a href="se.html">Something Else</a>
+	</nav>
+
+</body>
+</html>
