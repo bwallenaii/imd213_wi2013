@@ -15,7 +15,7 @@ var FaderBox = new Class({
 	{
 		this.element = document.id(element);
 		this.setOptions(options);
-		//Selected the elements within our main element (faderbox)
+		//Select the elements within our main element (faderbox)
 		//that we will need for later
 		this.navBox = this.element.getElement(this.options.navBoxSelector);
 		this.atags = this.navBox.getElements(this.options.navTagSelector);
