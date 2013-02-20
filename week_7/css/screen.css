@@ -1,0 +1,14 @@
+
+.question>div{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+.question p:first-child{
+	margin-top: 0;
+}
+
+.question p:last-child{
+	margin-bottom: 0;
+}
